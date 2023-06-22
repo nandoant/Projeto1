@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Libre+Barcode+128+Text&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400&display=swap" rel="stylesheet">
+    <title>Banner</title>
+  </head>
+  <body>
+    <nav></nav>
+    <header>
+        <h1 id="H1_Banner">Inve<span id="inv_text">rno'</span>23</h1>
+        <div class="bolha"></div>
+        <div class="bolha"></div>
+        <div class="bolha"></div>
+        <img src="./img/tenis.png" alt="tenis" id="banner_img"> 
+        <img src="./img/tenis2.png" alt="tenis" id="banner_img2"> 
+        <img src="./img/tenis3.png" alt="tenis" id="banner_img3">
+        <div id="faixa1" style="overflow: hidden;">
+            <h4><span id="inv_text1">P R O M O</span> — P R O M O — <span id="inv_text1">P R O M O</span> — P R O M O — <span id="inv_text1">P R O M O</span> </h4>
+        </div>
+        <div id="faixa2" style="overflow: hidden; width: 101%;">
+            <span id="texto-dinamico">
+            <h4><span id="inv_text">P e r s o n a l i z a d o</span> — P e r s o n a l i z a d o — <span id="inv_text">P e r s o n a l i z a d o</span></h4>
+            </span>
+        </div>
+
+<script>
+window.addEventListener('resize', function() {
+  var textoElement = document.getElementById('texto-dinamico');
+  var textoCompleto = textoElement.getAttribute('data-texto');
+  var texto = textoCompleto;
+  var larguraTexto = textoElement.offsetWidth;
+  var larguraContainer = textoElement.parentNode.offsetWidth;
+
+  while (larguraTexto > larguraContainer) {
+    texto = texto.slice(0, -1);
+    textoElement.textContent = texto;
+    larguraTexto = textoElement.offsetWidth;
+  }
+  
+  if (texto !== textoCompleto) {
+    textoElement.textContent += '...';
+  }
+});
+</script>
+        <!--
+        <div id="sideTexto">
+            <h4>Bora lá escolher seu tenis</h4>
+            <h4 style="padding-left: 116px;">temos mais de 20 anos de historia</h4>
+            <h4>mas caso queira algo mais personalizado </h4>
+        </div>
+        --> 
+
+        <!--
+                    <div id="bolhaLink3"></div>
+        <div id="bolhaLink4"></div>
+                    <a href="#" id="a2"></a>
+        <div id="bolhaLink"></div>
+        <div id="bolhaLink2">
+            <h4>►</h4>
+        </div>
+        <img src="./img/tenis4.png" alt="tenis" id="banner_img4">
+
+        <a href="#" id="a1"></a>
+        <div id="bolhaLink1"></div>
+        <div id="bolhaLink21">
+            <h4>►</h4>
+        </div>
+        <img src="./img/tenis5.png" alt="tenis" id="banner_img5">
+        <img src="./img/tenis5.png" alt="tenis" id="banner_img6">
+        <img src="./img/tenis4.png" alt="tenis" id="banner_img41">
+
+    </header>
+  </body>
+</html>
