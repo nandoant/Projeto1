@@ -1,0 +1,170 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    display: contents;
+}
+#H1_Banner {
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    font-family: "Libre Barcode 128 Text", cursive;
+    font-size: 14em;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+#inv_text {
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+#banner {
+    transition: .3s cubic-bezier(.5,1,.89,1) 0s;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 98vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4649259850424545) 0%,
+        rgba(206, 255, 249, 0.29685875815169815) 57%,
+        rgba(206, 255, 249, 0.5965786461068803) 100%
+    );
+}
+.bolha {
+    position: absolute;
+    z-index: 2;
+    width: 125px;
+    height: 125px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    border-radius: 50%;
+    transition: width 0.5s;
+}
+.bolha:nth-child(1) {
+    top: 50%;
+    left: 70%;
+}
+.bolha:nth-child(2) {
+    top: 30%;
+    left: 40%;
+}
+.bolha:nth-child(3) {
+    top: 14%;
+    left: 26%;
+}
+.bolha:nth-child(4) {
+    top: 29%;
+    left: 60%;
+}
+#banner_img{
+    position: absolute;
+    z-index: 3;
+    top: 17%;
+    left: 70.2%;
+}
+#banner_img2{
+    position: absolute;
+    z-index: 0;
+    transform: rotate(-20deg);
+    top: -10%;
+    left: 6%;
+}
+#banner_img3{
+    transform: rotate(20deg);
+    filter: blur(5px);
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    top: -2.5%;
+    left: 70%;
+}
+#banner_img6{
+    transform: rotate(20deg);
+    filter: blur(5px);
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    top: 49%;
+    left: 7%;
+}
+#shop{
+    position: absolute;
+    top: 55%;
+    height: 49px;
+    border-radius: 26px;
+    display: inline-flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+    justify-content: center;
+    transition: .3s cubic-bezier(.5,1,.89,1) 0s;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+    border: 1px solid;
+    background-color: rgb(251, 42, 42);
+    color: white;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+#faixa1{
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    top: 85%;
+    height: 80px;
+    width: 100%;
+    background-color: red;
+  }
+  #faixa1 > h4{
+    font-family: 'Goldman', cursive;
+    margin: 0;
+    font-size: 60px;
+    color: white;
+  }
+  #inv_text1{
+    color: #ffffff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.4px;
+  }
+#faixa2{
+    overflow: hidden;
+    transform: rotate(-5deg);
+    position: absolute;
+    z-index: 12;
+    top: 81%;
+    height: 80px;
+    width: 102%;
+    background-color: rgb(255, 255, 255);
+  }
+  #faixa2  h4{
+    font-family: 'Goldman', cursive;
+    margin: 0;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+  }
+
+/*--------------------------------------------------------------------*/
+header{
+    height: 8%;
+    width: 100%;
+    background-color: #000;
+    z-index: 9999;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    z-index: 9999;
+}
