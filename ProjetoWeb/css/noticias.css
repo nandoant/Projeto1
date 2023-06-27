@@ -10,12 +10,22 @@ body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
 }
+
 body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Estilos do cabeçalho */
 header {
   background-color: #000;
   color: #fff;
@@ -46,14 +56,20 @@ nav a:hover {
   background-color: #555;
 }
 
-h1 {
-  margin: 0;
-}
-
+/* Estilos do conteúdo principal */
 main {
+  padding: 20px;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
 .card {
@@ -118,12 +134,4 @@ main {
 figure {
   margin: 0;
   padding: 0;
-}
-
-footer {
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  margin: 0;
 }
