@@ -89,9 +89,7 @@ aside {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 60%;
-  margin: auto;
-  margin-top: 2%;
-  margin-left: 16px;
+  margin: 16px;
 }
 
 /* Estilos do rodapé */
