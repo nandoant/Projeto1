@@ -1,0 +1,108 @@
+      /* Estilos gerais */
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      /* Estilos do cabeçalho */
+      header {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      /* Estilos da imagem e legenda */
+      figure {
+        text-align: center;
+        margin: auto;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      figcaption {
+        font-style: italic;
+        margin-top: 10px;
+      }
+
+      /* Estilos do conteúdo principal */
+      main {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+      }
+
+      /* Estilos da seção "Missão" */
+      aside {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 60%;
+      }
+
+      /* Estilos do rodapé */
+      footer {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Estilos do áudio */
+      audio {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+      }

@@ -1,0 +1,144 @@
+      /* Estilos gerais */
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      /* Estilos do cabeçalho */
+      header {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      main {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.4649259850424545) 0%,
+            rgba(206, 255, 249, 0.29685875815169815) 57%,
+            rgba(206, 255, 249, 0.5965786461068803) 100%
+        )
+      }
+
+      aside {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+      }
+
+      /* Estilos do rodapé */
+      footer {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      /*form*/
+      .container {
+        width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .grupo-formulario {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f4f4f4;
+        color: #333;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      #saida-formulario {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f1f1f1;
+      }
+
+      form {
+        width: 60%;
+        margin: 8px auto;
+      }

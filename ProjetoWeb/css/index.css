@@ -155,16 +155,33 @@ body{
   }
 
 /*--------------------------------------------------------------------*/
-header{
-    height: 8%;
-    width: 100%;
+header {
     background-color: #000;
-    z-index: 9999;
-}
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
 
-nav{
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    z-index: 9999;
-}
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
