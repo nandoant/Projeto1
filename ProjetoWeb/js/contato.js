@@ -1,4 +1,6 @@
-document.getElementById("formulario-contato").addEventListener("submit", function(event) {
+document
+  .getElementById("formulario-contato")
+  .addEventListener("submit", function (event) {
     event.preventDefault(); // Impede o envio do formulário
 
     // Obter os valores do formulário
@@ -13,10 +15,13 @@ document.getElementById("formulario-contato").addEventListener("submit", functio
     saidaFormulario.innerHTML = "<h3>Informações do formulário:</h3>";
     saidaFormulario.innerHTML += "<p><strong>Nome:</strong> " + nome + "</p>";
     saidaFormulario.innerHTML += "<p><strong>Email:</strong> " + email + "</p>";
-    saidaFormulario.innerHTML += "<p><strong>Telefone:</strong> " + telefone + "</p>";
-    saidaFormulario.innerHTML += "<p><strong>Mensagem:</strong> " + mensagem + "</p>";
-    saidaFormulario.innerHTML += "<p><strong>Assunto:</strong> " + assunto + "</p>";
+    saidaFormulario.innerHTML +=
+      "<p><strong>Telefone:</strong> " + telefone + "</p>";
+    saidaFormulario.innerHTML +=
+      "<p><strong>Mensagem:</strong> " + mensagem + "</p>";
+    saidaFormulario.innerHTML +=
+      "<p><strong>Assunto:</strong> " + assunto + "</p>";
 
     // Limpar os campos do formulário
     document.getElementById("formulario-contato").reset();
-});
+  });
